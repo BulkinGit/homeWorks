@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../css/style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="block">
+    <h2>Задача 3</h2>
+    <p>
+      З клавіатури вводяться вартість товару та кількість одиниць 3 товарів. <br>
+      Обчислити вартість кожного товару окремо та загальну вартість. <br>
+      Вивести чек (як у супермаркеті) використовуючи елементи розмітки.
+    </p>
+    <script>
+      // 1 вводимо дані
+      const priceProduct1 = parseFloat(prompt("Введіть вартість першого товару грн.", "25.5"))
+      const priceProduct2 = parseFloat(prompt("Введіть вартість другого товару грн.", "25.5"))
+      const priceProduct3 = parseFloat(prompt("Введіть вартість третього товару грн.", "25.5"))
+
+      const quantityProduct1 = parseInt(prompt("Введіть кількість першого товару: ", "0"))
+      const quantityProduct2 = parseInt(prompt("Введіть кількість другого товару: ", "0"))
+      const quantityProduct3 = parseInt(prompt("Введіть кількість третього товару: ", "0"))
+
+
+      // 2 знаходимо результат  
+      const sumProduct1 = priceProduct1 * quantityProduct1
+      const sumProduct2 = priceProduct2 * quantityProduct2
+      const sumProduct3 = priceProduct3 * quantityProduct3
+
+      // 3 Виводимо результат
+      document.write(`
+      <table border="2px">
+        <tr>
+          <th>сума першої покупки ${sumProduct1}</th>
+          <td>кількість товару ${quantityProduct1}</td>
+          <td>вартість товару ${priceProduct1} грн</td>
+        </tr>
+        <tr>
+          <th>сума другої покупки ${sumProduct2}</th>
+          <td>кількість товару ${quantityProduct2}</td>
+          <td>вартість товару ${priceProduct2} грн</td>
+        </tr>
+        <tr>
+          <th>сума третьої покупки ${sumProduct3}</th>
+          <td>кількість товару ${quantityProduct3}</td>
+          <td>вартість товару ${priceProduct3} грн</td>
+        </tr>
+      </table>
+      `)
+    </script>
+  </div>
+</body>
+
+</html>

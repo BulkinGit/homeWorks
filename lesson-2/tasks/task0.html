@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../css/style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="block">
+    <h2>Задача 0</h2>
+    <p>
+      Дано значення виразів a, b, c <br>
+      Обчислити значення виразів <br>
+      S1=a+12+b <br>
+    </p>
+    <script>
+      // 1 вводимо дані
+      const a = parseInt(prompt("a=", "0"))
+      const b = parseInt(prompt("b=", "0"))
+      const c = 5
+
+      // 2 знаходимо результат
+      const S1 = a + 12 + b
+      const S2 = Math.sqrt((a + b) / (a * 2)).toFixed(4)
+      const S3 = Math.cbrt((a + b) * c).toFixed(4)
+      const S4 = Math.sin(a / -b).toFixed(4)
+
+      // 3 Виводимо результат
+      document.write(`
+      S1 = ${S1} <br>
+      S2 = ${S2} <br>
+      S3 = ${S3} <br>
+      S4 = ${S4}
+      `)
+    </script>
+  </div>
+</body>
+
+</html>

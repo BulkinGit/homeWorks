@@ -1,0 +1,32 @@
+html,
+body {
+  height: 100%;
+  line-height: 1;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ol {
+  padding-block: 40px;
+}
+.block {
+  padding: 40px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+  background-color: #e6e8eb;
+}
