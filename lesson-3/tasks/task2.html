@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../css/style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="block">
+    <h2>Задача 2</h2>
+    <p>
+      З клавіатури вводиться ціна товару і кількість грошей. <br>
+      Якщо грошей не вистачає то відмовляємо у покупці,
+      інакше, якщо ще залишаються гроші, то пропонуємо купити лотерею за 4 грн.
+    </p>
+    <script>
+      // 1 вводимо дані
+      const priceProduct = parseFloat(prompt("Ціна обраного товару", "100"))
+      const userMony = parseFloat(prompt("Яка у вас кількість коштів", "100"))
+      let result = ""
+
+      // 2 знаходимо результат 
+      if (userMony >= priceProduct) result = `Вітаємо з купівлею товара. Пропонуємо купити лотерею за 4 грн`
+      else result = `Вашої суми не достатньо для здійснення покупки`
+
+      // 3 Виводимо результат
+      document.write(`
+    ціна покупки: ${priceProduct} <br>
+    наявність грошей у покупця: ${userMony} <br>
+    ${result}
+      `)
+    </script>
+  </div>
+</body>
+
+</html>

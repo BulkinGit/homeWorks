@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../css/style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="block">
+    <h2>Задача 5</h2>
+    <p>
+      З клавіатури вводиться назва категорії водія (А-мотоцикл, В-легковий автомобіль, С-вантажний автомобіль).
+      Вивести на екран назву транспортного засобу, яким він може керувати.
+    </p>
+    <script>
+      // 1 вводимо дані
+      const driverCategory = prompt("Введіть категорія водіння А, В, С")
+      let category = ''
+
+      // 2 знаходимо результат 
+      switch (driverCategory) {
+        case 'A':
+          category = 'A-мотоцикл'
+          break;
+        case 'B':
+          category = 'B-легковий автомобіль'
+          break;
+        case 'C':
+          category = 'C-вантажний автомобіль'
+          break;
+        default:
+          category = 'введена категорія не відповідає заданим параметрам'
+          break;
+      }
+
+      // 3 Виводимо результат
+      document.write(`
+    ${category}
+      `)
+    </script>
+  </div>
+</body>
+
+</html>

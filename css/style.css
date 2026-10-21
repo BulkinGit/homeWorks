@@ -20,11 +20,20 @@ a {
 ol {
   padding-block: 40px;
 }
+ol h3 {
+  padding-block: 8px;
+}
+ul {
+  padding-block: 40px;
+}
+ul h2 {
+  padding-block: 8px;
+}
 .block {
   padding: 40px;
   max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+  margin-top: 5%;
   text-align: left;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
   border-radius: 16px;

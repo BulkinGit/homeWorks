@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../css/style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="block">
+    <h2>Задача 3</h2>
+    <p>
+      Випадковим чином генерується число від 1 до 5. <br> Спробуйте вгадати число за 2 спроби.
+    </p>
+    <script>
+      // 1 вводимо дані 
+      let userNum = parseInt(prompt("Введіть будь довільне число від 1 до 5"))
+
+      const min = 1
+      const max = 5
+      let randomNum = min + Math.floor(Math.random() * (max - min + 1))
+      let result
+
+      // 2 знаходимо результат 
+
+      if (userNum === randomNum) {
+        result = `Ви вгадали число з першої спроби: <br> задане число: ${userNum} <br>
+        вгадуване число ${randomNum}`
+      } else {
+        userNum = parseInt(prompt("Введіть будь довільне число від 1 до 5"))
+        if (userNum === randomNum) {
+          result = `Ви вгадали число з другої спроби: <br> задане число: ${userNum} <br> вгадуване число ${randomNum}`
+        } else {
+          result = `Ви не вгадали число за дві спроби: <br> задане число: ${userNum} <br> вгадуване число ${randomNum}`
+        }
+      }
+
+
+      // 3 Виводимо результат
+      document.write(`
+    ${result}
+      `)
+    </script>
+  </div>
+</body>
+
+</html>
